@@ -2,8 +2,8 @@
 
 VUI (based on vue3) is able to run in cross-platform solutions by Taro.
 
-- miniprogram (weapp/swan/alipay/tt/qq/jd)
-- quickapp
+- miniprogram (weapp/swan/alipay/tt/qq/jd) - `zh-CN` project
+- quickapp - `zh-CN` project
 - h5
 - react native
 
@@ -14,3 +14,5 @@ VUI (based on vue3) is able to run in cross-platform solutions by Taro.
 
 - change event in template
   - `@click` => `@tap`
+
+> `<style scoped>` is not supported in miniprogram
