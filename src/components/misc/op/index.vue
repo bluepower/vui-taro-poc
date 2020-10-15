@@ -29,7 +29,7 @@ export default {
   props: {
     scale: {
       type: Number,
-      default: 2 // default value in weapp
+      default: 1
     }
   },
 

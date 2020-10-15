@@ -11,6 +11,7 @@ VUI (based on vue3) is able to run in cross-platform solutions by Taro.
 
 - change tag in template
   - `div` => `view`
+  - `img` => `image`
 
 - change event in template
   - `@click` => `@tap`

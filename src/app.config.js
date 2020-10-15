@@ -1,7 +1,6 @@
 export default {
   pages: [
-    'pages/misc/op/index',
-    'pages/misc/cool-button/index'
+    'pages/misc/button-demo/index'
   ],
   window: {
     backgroundTextStyle: 'light',
