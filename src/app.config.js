@@ -1,6 +1,6 @@
 export default {
   pages: [
-    'pages/misc/button-demo/index'
+    'pages/button-demo/index'
   ],
   window: {
     backgroundTextStyle: 'light',
