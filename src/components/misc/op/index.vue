@@ -1,21 +1,19 @@
 <template>
-  <view class="v-op-wrapper" style="height:100vh">
-    <view class="v-op" :style="opStyle">
-      <view class="bone"></view>
-      <view class="bone"></view>
-      <view class="bone"></view>
-      <view class="bone"></view>
-      <view class="head">
-        <view class="hat">
-          <view class="line-lt"></view>
-          <view class="line-rt"></view>
-        </view>
-        <view class="eye eye-lt"></view>
-        <view class="eye eye-rt"></view>
+  <view class="v-op" :style="opStyle">
+    <view class="bone"></view>
+    <view class="bone"></view>
+    <view class="bone"></view>
+    <view class="bone"></view>
+    <view class="head">
+      <view class="hat">
+        <view class="line-lt"></view>
+        <view class="line-rt"></view>
       </view>
-      <view class="mouth">
-        <view class="teeth"></view>
-      </view>
+      <view class="eye eye-lt"></view>
+      <view class="eye eye-rt"></view>
+    </view>
+    <view class="mouth">
+      <view class="teeth"></view>
     </view>
   </view>
 </template>
@@ -50,13 +48,6 @@ export default {
 </script>
 
 <style lang="scss">
-.v-op-wrapper {  
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 .v-op {
   position: relative;
   transition: 0.2s;
