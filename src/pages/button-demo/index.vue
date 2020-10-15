@@ -15,9 +15,8 @@
 </template>
 
 <script>
-import VCoolButton from '../../../components/misc/cool-button/index.vue'
-import VOnePiece from '../../../components/misc/op/index.vue'
-
+import VCoolButton from '../../components/misc/cool-button/index.vue'
+import VOnePiece from '../../components/misc/op/index.vue'
 
 export default {
   name: 'button-demo',
