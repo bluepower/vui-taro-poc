@@ -17,3 +17,7 @@ VUI (based on vue3) is able to run in cross-platform solutions by [Taro3](https:
   - `@click` => `@tap`
 
 > `<style scoped>` is not supported in miniprogram by Taro.
+
+## License
+
+<img src="https://nikoni.top/images/niko-mit.png" alt="MIT License" width="396" height="250"/>
