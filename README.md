@@ -1,6 +1,6 @@
 # vui-taro
 
-VUI (based on vue3) is able to run in cross-platform solutions by [Taro3](https://github.com/NervJS/taro).
+[VUI (based on vue3)](https://github.com/bluepower/vui-vc-next) is able to run in cross-platform solutions by [Taro3](https://github.com/NervJS/taro).
 
 - miniprogram (weapp/swan/alipay/tt/qq/jd) - `zh-CN` project
 - quickapp - `zh-CN` project
@@ -8,6 +8,8 @@ VUI (based on vue3) is able to run in cross-platform solutions by [Taro3](https:
 - react native
 
 ### Convert VUI from vui-vc-next to vui-taro
+
+Keep the js and css in SFC, only minor change in the template.
 
 - change tag in template
   - `div` => `view`
