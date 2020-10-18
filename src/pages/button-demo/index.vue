@@ -44,4 +44,11 @@ export default {
   top: 200px;
   left: 350px;
 }
+
+@media (min-width: 640px) {
+  .bg {
+    width: 720px;
+    height: 540px;
+  }
+}
 </style>
