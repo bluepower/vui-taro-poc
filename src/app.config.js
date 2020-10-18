@@ -1,5 +1,6 @@
 export default {
   pages: [
+    'pages/skeleton-demo/index',
     'pages/button-demo/index'
   ],
   window: {

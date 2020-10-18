@@ -1,7 +1,7 @@
 <template>
   <image
     src="https://nikoni.top/images/others/cg.jpg"
-    class="bg"
+    class="bg-img"
   />
   <v-cool-button
     :scale="0.8"
@@ -29,7 +29,7 @@ export default {
 </script>
 
 <style>
-.bg {
+.bg-img {
   width: 100vw;
 }
 
@@ -46,7 +46,7 @@ export default {
 }
 
 @media (min-width: 640px) {
-  .bg {
+  .bg-img {
     width: 720px;
     height: 540px;
   }

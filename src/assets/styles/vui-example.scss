@@ -1,0 +1,280 @@
+.nav-wrapper {
+  margin: 0 auto;
+  padding: 0;
+  font-size: 40px;
+  width: 600px;
+
+  p {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  
+  .title {    
+    text-transform: uppercase;
+    font-size: 50px;
+    font-weight: bold;
+  }
+
+  sub {
+    margin-right: 30px;
+    bottom: 10px;
+    position: relative;
+    opacity: 0.5;
+  }
+  
+  ul {
+    list-style-type: none;
+  }
+  
+  a {
+    font-weight: bold;
+    font-size: 30px;
+    color: #2c3e50;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(187, 222, 251, 0.6);
+  }
+  
+  a.router-link-exact-active {
+    color: #4CAF50;
+  }
+}
+
+.v-back {
+  display: block;
+  margin: 20px;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.v-example {
+  margin: 20px;
+  padding-bottom: 40px;
+  font-size: 40px;
+  border-bottom: 1px solid #ccc;
+
+  p {
+    padding-bottom: 20px;
+  }
+
+  > p {
+    font-weight: 600;
+  }
+  
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  span {
+    margin-left: 20px;
+    font-size: 75%;
+  }
+
+  span.progress-value {
+    margin-left: 0;
+    font-family: VC-Amount, 'Helvetica Neue', Helvetica, 'PingFang SC',
+      'Hiragino Sans GB', 'Microsoft YaHei', Arial, sans-serif;
+  
+    span.v-amount.numerical {
+      margin-left: 0;
+      font-size: 100%;
+    }
+  }  
+  
+  .v-tag {
+    margin-right: 50px;
+  }
+
+  .v-button {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .v-popup.left .v-popup-box,
+  .v-popup.right .v-popup-box {
+    width: 60%;
+  }
+
+  &-item {
+    display: inline-block;
+    margin-left: 60px;
+    p {
+      font-size: 20px;
+      color: #666;
+      text-align: center;
+    }
+  }
+  
+  &-invert {
+    -webkit-filter: invert(1);
+  }
+}
+
+.v-example-popup {
+  position: relative;
+  // font-size: 28px;
+  font-weight: 500;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #FFF;
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  span.v-amount {
+    font-size: 60%;
+  }  
+}
+
+.v-example-popup-center {
+  padding: 50px;
+  border-radius: 4px;
+
+  span.amount-title {
+    font-size: 60%;
+  }
+}
+
+.v-example-popup-top {
+  width: 100%;
+  height: 75px;
+  line-height: 75px;
+  background: #607D8B;
+  color: #FFF;
+
+  button {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+.v-example-popup-bottom {
+  width: 100%;
+  padding: 100px 0;
+  p {
+    line-height: 50px;
+  }
+}
+
+.v-example-popup-left,
+.v-example-popup-right {
+  height: 100%;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+}
+
+.v-example-svg {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .icon-svg {
+    margin-right: 20px;
+  }
+
+  span {
+    font-size: 75%;
+  }
+}
+
+.v-example-img {
+  height: 400px;
+}
+
+.v-example-row {
+  margin-bottom: 20px;
+}
+
+.v-example-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.v-example-todo-list {
+  .main-hd {
+    .header {
+      display: flex;
+
+      .v-button {
+        margin-bottom: 0;
+      }
+    }
+
+    input[type='text'] {
+      margin-right: 10px;
+      padding-left: 3px;
+      width: 100%;
+      height: 50px;
+      border: 1px solid #CCC;
+      border-radius: 4px;
+    }
+
+    p.tasks {
+      margin-top: 30px;
+      padding: 0;      
+      width: 160px;
+      font-size: 100%;
+      color: #4CAF50;
+    }    
+  }
+
+  .main-bd {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+
+    p {
+      margin-top: 20px;
+      padding: 0;
+    }
+
+    p.remaining {
+      margin-right: 60px;
+      font-size: 80%;
+      color: #36C;
+    }
+
+    p.completed {
+      font-size: 80%;
+      color: #009688;
+    }
+  }
+
+  .main-ft {    
+    .row {
+      margin-bottom: 15px;
+      padding-bottom: 15px;
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      border-bottom: 1px solid #EFEFEF;
+
+      .content {
+        margin-left: 50px;
+        color: #000;
+        text-decoration: none;
+        font-size: 80%;
+      }
+
+      .label-done {
+        color: #999;
+        text-decoration: line-through;
+      }
+    }
+  }
+
+  .row-flex {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+
+    .v-icon {
+      margin-right: 20px;
+    }
+  }  
+}
