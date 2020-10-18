@@ -14,6 +14,7 @@ Keep the js and css in SFC, only minor change in the template.
 - change tag in template
   - `div` => `view`
   - `img` => `image`
+  - `p` => `text`
 
 - change event in template
   - `@click` => `@tap`
