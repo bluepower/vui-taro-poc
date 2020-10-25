@@ -11,10 +11,16 @@
     :scale="0.8"
     class="btn-rt"
   />
-  <v-one-piece/>
+  <view class="v-example">
+    <v-one-piece :scale="1.2" />
+  </view>
+  <view class="v-example">
+    <view @tap="showDemo('skeleton')">[ skeleton-demo ]</view>
+  </view>  
 </template>
 
 <script>
+import Taro from '@tarojs/taro'
 import VCoolButton from '../../components/misc/cool-button/index.vue'
 import VOnePiece from '../../components/misc/op/index.vue'
 
@@ -24,11 +30,26 @@ export default {
   components: {
     [VCoolButton.name]: VCoolButton,
     [VOnePiece.name]: VOnePiece
+  },
+
+  setup() {
+    const showDemo = (name) => {
+      name = name ? name.toLowerCase() : 'button'
+      Taro.redirectTo({
+        url: `/pages/${name}-demo/index`
+      })      
+    }
+
+    return {
+      showDemo
+    }
   }
 }
 </script>
 
-<style>
+<style lang="scss">
+@import '../../assets/styles/vui-example.scss';
+
 .bg-img {
   width: 100vw;
 }

@@ -1,5 +1,8 @@
 <template>
   <view class="v-example">
+    <view @tap="showDemo('button')">[ button-demo ]</view>
+  </view>
+  <view class="v-example">
     <text>Skeleton Content loading</text>
     <button
       @tap="startContentLoading"
@@ -30,6 +33,7 @@
 </template>
 
 <script>
+import Taro from '@tarojs/taro'
 import { reactive } from 'vue'
 import VSkeleton from '../../components/skeleton/index.vue'
 
@@ -59,9 +63,17 @@ export default {
       }, 2000)
     }
 
+    const showDemo = (name) => {
+      name = name ? name.toLowerCase() : 'button'
+      Taro.redirectTo({
+        url: `/pages/${name}-demo/index`
+      })      
+    }
+
     return {
       state,
-      startContentLoading
+      startContentLoading,
+      showDemo
     }
   }
 }
