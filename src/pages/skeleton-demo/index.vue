@@ -15,7 +15,7 @@
       :row="7"
       :loading="state.contentLoading"
     >
-      <image src="../../assets/images/kongfu.png" class="bg-img" />
+      <image src="https://nikoni.top/images/others/kongfu.png" class="bg-img" />
     </v-skeleton>
   </view>
   <view class="v-example">
