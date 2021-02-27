@@ -7,6 +7,7 @@ $font-body-large: 28px;
 $font-body-normal: 26px;
 $font-caption-large: 36px;
 $font-caption-normal: 32px;
+$font-minor-large: 24px;
 $font-minor-normal: 20px;
 $font-weight-normal: 400;
 $font-weight-medium: 500;
@@ -26,8 +27,13 @@ $color-bg-disabled: #E2E4EA;
 $color-bg-tap: #F9FAFB;
 $color-mask: rgba(37, 38, 45, 0.7);
 
-$radius-normal: 4px;
+$opacity-disabled: 0.3;
+
+$radius-normal: 4Px; // pxtorem ignore
 $radius-circle: 50%;
+
+$agree-fill: $color-primary;
+$agree-disabled-opacity: $opacity-disabled;
 
 $checkbox-color: $color-text-base;
 $checkbox-font-size: $font-caption-normal;
@@ -54,7 +60,7 @@ $v-gap-md: $h-gap-md;
 $v-gap-lg: $h-gap-lg;
 $v-gap-sl: $h-gap-sl;
 
-$opacity-disabled: 0.3;
+$ease-in-out-quint: cubic-bezier(.86, 0, .07, 1);
 
 $action-sheet-height: 100px;
 $action-sheet-padding-h: $h-gap-sl;
@@ -134,13 +140,24 @@ $popup-zindex: 900;
 
 $font-family-normal: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
 $font-family-number: $font-family-normal;
-$icon-font-family: url("../../assets/fonts/iconfont.woff") format("woff"), url("../../assets/fonts/iconfont.ttf") format("truetype");
-$amount-font-family: url("../../assets/fonts/DINPro-Medium.ttf") format("truetype");
+$icon-font-family: url(/src/assets/fonts/iconfont.woff) format("woff"), url(/src/assets/fonts/iconfont.ttf) format("truetype");
+$amount-font-family: url(/src/assets/fonts/DINPro-Medium.ttf) format("truetype");
 
 $switch-fill: $color-primary;
 $switch-fill-inverse: $color-bg-disabled;
 $switch-handle-color: #FFF;
 $switch-item-color-disabled: $opacity-disabled;
+
+$tab-font-size: $font-body-large;
+$tab-font-weight: $font-weight-medium;
+$tab-text-color: $color-text-minor;
+$tab-active-color: $color-primary;
+$tab-disabled-color: $color-text-disabled;
+$tab-bg: $color-bg-base;
+$tab-height: 100px;
+$tab-ink-height: 3px;
+$tab-offset: $h-gap-sl;
+$tab-item-gap: $h-gap-md;
 
 $toast-fill: rgba(65, 72, 93, .77);
 $toast-font-size: $font-body-large;

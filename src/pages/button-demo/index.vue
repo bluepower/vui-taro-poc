@@ -4,17 +4,17 @@
     class="bg-img"
   />
   <v-cool-button
-    :scale="0.8"
+    :scale="0.5"
     class="btn-lt"
   />
   <v-cool-button
-    :scale="0.8"
+    :scale="0.5"
     class="btn-rt"
   />
   <view class="v-example">
     <v-one-piece :scale="1.2" />
   </view>
-  <view class="v-example">
+  <view class="v-example v-example-nav">
     <view @tap="showDemo('skeleton')">[ skeleton-demo ]</view>
   </view>  
 </template>
@@ -50,20 +50,24 @@ export default {
 <style lang="scss">
 @import '../../assets/styles/vui-example.scss';
 
+.v-example-nav {
+  margin-top: 80px;
+}
+
 .bg-img {
   width: 100vw;
 }
 
 .btn-lt {
   position: absolute;
-  top: 200px;
-  left: 200px;
+  top: 140px;
+  left: 120px;
 }
 
 .btn-rt {
   position: absolute;
-  top: 200px;
-  left: 350px;
+  top: 140px;
+  left: 290px;
 }
 
 @media (min-width: 640px) {

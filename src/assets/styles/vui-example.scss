@@ -20,6 +20,10 @@
     bottom: 10px;
     position: relative;
     opacity: 0.5;
+
+    a {
+      font-weight: normal;
+    }
   }
   
   ul {
@@ -112,6 +116,7 @@
 
 .v-example-popup {
   position: relative;
+  // font-size: 28px;
   font-weight: 500;
   box-sizing: border-box;
   text-align: center;
@@ -128,7 +133,7 @@
 
 .v-example-popup-center {
   padding: 50px;
-  border-radius: 4px;
+  border-radius: 4Px; // pxtorem ignore
 
   span.amount-title {
     font-size: 60%;
@@ -152,7 +157,8 @@
 
 .v-example-popup-bottom {
   width: 100%;
-  padding: 100px 0;
+  padding: 25px 0 50px 0;
+
   p {
     line-height: 50px;
   }
@@ -163,7 +169,9 @@
   height: 100%;
   padding: 0 15px;
   display: flex;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .v-example-svg {
@@ -210,7 +218,7 @@
       width: 100%;
       height: 50px;
       border: 1px solid #CCC;
-      border-radius: 4px;
+      border-radius: 4Px; // pxtorem ignore
     }
 
     p.tasks {
@@ -276,4 +284,45 @@
       margin-right: 20px;
     }
   }  
+}
+
+.v-example-scroll-view-lazy {
+  height: 600px;
+  background-color: #333;
+  border-radius: 4Px; // pxtorem ignore
+
+  .lazy-list {
+    padding-top: 10px;
+
+    .item {
+      display: flex;
+      box-sizing: border-box;
+      align-items: center;
+      padding: 0 20px 20px 20px;
+
+      .icon {
+        flex: 0 0 100px;
+        width: 100px;
+        padding-right: 20px;
+      }
+
+      .text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        overflow: hidden;
+        font-size: 14px;
+
+        .name {
+          margin-bottom: 10px;
+          color: #fff;
+        }
+
+        .desc {
+          color: rgba(255, 255, 255, 0.3);
+        }
+      }
+    }
+  }
 }
