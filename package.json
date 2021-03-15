@@ -1,6 +1,6 @@
 {
   "name": "vui-taro",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "private": true,
   "description": "VUI with Taro",
   "templateInfo": {
@@ -37,20 +37,20 @@
   "license": "MIT",
   "dependencies": {
     "@babel/runtime": "^7.13.10",
-    "@tarojs/components": "^3.1.2",
-    "@tarojs/runtime": "^3.1.2",
-    "@tarojs/taro": "^3.1.2",
+    "@tarojs/components": "^3.1.4",
+    "@tarojs/runtime": "^3.1.4",
+    "@tarojs/taro": "^3.1.4",
     "vue": "^3.0.7"
   },
   "devDependencies": {
     "@babel/core": "^7.13.10",
-    "@tarojs/mini-runner": "^3.1.2",
-    "@tarojs/webpack-runner": "^3.1.2",
+    "@tarojs/mini-runner": "^3.1.4",
+    "@tarojs/webpack-runner": "^3.1.4",
     "@types/webpack-env": "^1.16.0",
     "@vue/compiler-sfc": "^3.0.7",
-    "babel-preset-taro": "^3.1.2",
-    "eslint": "^7.21.0",
-    "eslint-config-taro": "^3.1.2",
+    "babel-preset-taro": "^3.1.4",
+    "eslint": "^7.22.0",
+    "eslint-config-taro": "^3.1.4",
     "eslint-plugin-vue": "^7.7.0",
     "stylelint": "^13.12.0",
     "vue-loader": "^16.1.2"
